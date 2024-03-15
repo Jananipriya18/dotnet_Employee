@@ -1,11 +1,12 @@
-﻿using System;
-
-namespace Employees.Models
+﻿namespace Employees.Models
 {
-   public int Id{get;set;}
-   public DateTime Name {get;set;}
-   public string Email {get;set;}
-   public DateTime Dob {get;set;}
-   public string Dept {get;set;}
-   public string Salary { get; set;}
+    public class Employee
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public DateTime Dob { get; set; }
+        public string Dept { get; set; }
+        public decimal Salary { get; set; }
+    }
 }

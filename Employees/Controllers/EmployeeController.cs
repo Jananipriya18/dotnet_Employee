@@ -85,7 +85,7 @@ namespace Employees.Controllers
             return View(employee);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         public IActionResult DeleteConfirmed(int id)
         {
             var employee = _employees.Find(e => e.Id == id);
